@@ -1,0 +1,6 @@
+# Set all JavaScript and configuration files to use LF
+*.js text eol=lf
+*.mjs text eol=lf
+
+# Or set all files to use LF
+* text=auto eol=lf
