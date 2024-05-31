@@ -23,6 +23,9 @@ jobs:
         with:
           node-version: '18' # Node.js 버전 지정
 
+      - name: Set environment variable to disable strict version check
+        run: echo "COREPACK_ENABLE_STRICT=0" >> $GITHUB_ENV
+
       - name: Install dependencies
         run: |
           npm install -g pnpm@9 # pnpm 설치
